@@ -1,1 +1,308 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+img {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+}
+
+#main {
+  background-color: #020030;
+  font-family: "Lato", sans-serif;
+  color: #fcfcfc;
+}
+
+#scroll-page {
+  height: 200vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+.button {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  background: rgb(68, 100, 242);
+  background: -webkit-gradient(linear, left top, right top, from(#4464F2), color-stop(25%, #E6039C), color-stop(50%, #4464F2), color-stop(75%, #E6039C), to(#4464F2));
+  background: linear-gradient(90deg, #4464F2 0%, #E6039C 25%, #4464F2 50%, #E6039C 75%, #4464F2);
+  background-size: 800%;
+  background-position: 0 50%;
+  border-radius: 25px;
+}
+.button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5em;
+  font-size: 1.7rem;
+  font-family: Dosis;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  -webkit-animation: gradient 14s ease infinite;
+          animation: gradient 14s ease infinite;
+}
+
+.text-normal {
+  font-size: 1.4rem;
+  margin-bottom: 1em;
+}
+
+.h1 {
+  font-size: 6.5rem;
+  line-height: 7rem;
+  font-weight: 700;
+  font-family: Dosis;
+  margin-bottom: 0.8em;
+}
+
+.h4 {
+  font-size: 2.3rem;
+  margin-bottom: 0.4em;
+}
+
+.h5 {
+  font-size: 2rem;
+  font-family: "Dosis", sans-serif;
+  color: #9b8da5;
+}
+
+.text-colored {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  background: linear-gradient(135deg, #4464F2 30%, #E6039C 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.breakpoint {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding: 10px 15px;
+  border: 1px solid #fcfcfc;
+  border-radius: 20px;
+  margin: 5em 0 auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.breakpoint i {
+  margin-right: 0.5em;
+}
+
+.info {
+  position: fixed;
+  top: 50%;
+  left: 40px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  border: 2px solid #fcfcfc;
+  background-color: rgba(2, 0, 48, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 25px;
+  padding: 25px;
+  z-index: 1;
+}
+.info__name {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 3.4rem;
+  margin-bottom: 0.3em;
+}
+.info__image {
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 1.5em;
+  padding: 4px;
+  background: rgb(68, 100, 242);
+  background: linear-gradient(145deg, #4464F2 0%, #E6039C);
+}
+.info__image img {
+  border-radius: 25px;
+}
+.info__contact {
+  text-align: center;
+}
+.info__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2em;
+}
+.info__media .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  border: 1px solid #fcfcfc;
+  border-radius: 50%;
+  margin: 0.25em;
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+.info__media .media a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+.info__media .media a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.info__media .media:hover {
+  border: 1px solid #4464F2;
+}
+.info__media .media:hover a {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  color: #4464F2;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+}
+.hero__image img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+.hero__text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin-left: 35%;
+}
+.hero__text .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero__text .h5 {
+  margin-bottom: auto;
+}
+
+.experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5em;
+  text-align: center;
+  margin-bottom: 5em;
+}
+.experience__top {
+  font-size: 7rem;
+}
+.experience__bottom {
+  color: #9b8da5;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .info {
+    position: relative;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    max-width: 750px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 7.5px;
+  }
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}/*# sourceMappingURL=main.css.map */
