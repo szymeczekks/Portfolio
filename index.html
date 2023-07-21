@@ -1,96 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&family=Lato:ital,wght@0,300;0,400;0,900&family=Montserrat:ital,wght@0,800;0,900;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/20e2385bf9.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="main">
-        <div id="info" class="info">
-            <div class="info__name">Szymon Mińko</div>
-            <div class="info__spec text-normal">Web Designer & Developer</div>
-            <div class="info__image">
-                <picture>
-                    <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
-                    <source media="(min-width:0px)" srcset="./img/me.jpg">
-                    <img src="./img/me.jpg" alt="my face" style="width:auto;">
-                </picture>
-            </div>
-            <div class="info__contact">
-                <div class="h4">hello@szymon_minko.com</div>
-                <div class="h4">Piła, Polska</div>
-                <div class="text-normal">&copy; 2023 Szymon Mińko. <br> Wszelkie prawa zastrzeżone</div>
-                <div class="info__media">
-                    <div class="media">
-                        <a href="" class="media__firstTwo">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </div>
-                    <div class="media">
-                        <a href="" class="media__firstTwo">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="media">
-                        <a href="">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
-                    <div class="media">
-                        <a href="">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="button">
-                    <a href="">
-                        <i class="fa-regular fa-envelope"></i> Zatrudnij mnie!
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id="scroll-page" class="scroll-page">
-            <div class="hero">
-                <div class="hero__image">
-                    <picture>
-                        <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
-                        <source media="(min-width:0px)" srcset="./img/bg.jpg">
-                        <img src="./img/bg.jpg" alt="" style="width:auto;">
-                    </picture>
-                </div>
-                <div class="hero__text container">
-                    <div class="container">
-                        <div class="breakpoint">
-                            <i class="fa-solid fa-house"></i>
-                            Wstęp
-                        </div>
-                        <div class="h1">
-                            Tutaj kod staje się <span class="text-colored">sztuką</span>, a&nbsp;Twoje strony ożywają z&nbsp;niesamowitą <span class="text-colored">mocą</span>.
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&family=Lato:ital,wght@0,300;0,400;0,900&family=Montserrat:ital,wght@0,800;0,900;1,900&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/20e2385bf9.js" crossorigin="anonymous"></script>
+		<script src="/js/app.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="info-container">
+				<div id="info" class="info">
+					<div class="info__top">
+						<div class="info__name">Szymon Mińko</div>
+						<div class="info__spec text-normal">Web Designer & Developer</div>
+						<div class="info__image">
+							<picture>
+								<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+								<source media="(min-width:0px)" srcset="./img/me.jpg" />
+								<img src="./img/me.jpg" alt="my face" style="width: auto" />
+							</picture>
+						</div>
+					</div>
+					<div class="info__contact">
+						<div class="h4">hello@szymon_minko.com</div>
+						<div class="h4">Piła, Polska</div>
+						<div class="text-normal">
+							&copy; 2023 Szymon Mińko. <br />
+							Wszelkie prawa zastrzeżone
+						</div>
+						<div class="info__media">
+							<div class="media">
+								<a href="" class="media__firstTwo">
+									<i class="fa-brands fa-facebook-f"></i>
+								</a>
+							</div>
+							<div class="media">
+								<a href="" class="media__firstTwo">
+									<i class="fa-brands fa-instagram"></i>
+								</a>
+							</div>
+							<div class="media">
+								<a href="">
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+							</div>
+							<div class="media">
+								<a href="">
+									<i class="fa-brands fa-github"></i>
+								</a>
+							</div>
+						</div>
+						<div class="button">
+							<a href=""> <i class="fa-regular fa-envelope"></i> Zatrudnij mnie! </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="scroll-page" class="scroll-page">
+				<div id="hero" class="hero section">
+					<div class="hero__image">
+						<picture>
+							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							<source media="(min-width:0px)" srcset="./img/bg.jpg" />
+							<img src="./img/bg.jpg" alt="" />
+						</picture>
+					</div>
+					<div class="hero__text-wrapper">
+						<div class="darker"></div>
+						<div class="hero__text">
+							<div class="breakpoint">
+								<i class="fa-solid fa-house"></i>
+								Wstęp
+							</div>
+							<div class="h1">Tutaj kod staje się <span class="text-colored">sztuką</span>, a&nbsp;Twoje strony ożywają z&nbsp;niesamowitą <span class="text-colored">mocą</span>.</div>
+							<div class="h5">
+								Tworzę innowacyjne strony internetowe, które łączą piękno designu z&nbsp;doskonałą funkcjonalnością. <br />
+								Moja&nbsp;pasja leży w&nbsp;tworzeniu przestrzeni online, które inspirują i&nbsp;angażują.
+							</div>
+							<div class="experience">
+								<div class="experience__element">
+									<div class="experience__top">1+</div>
+									<div class="experience__bottom">
+										lata <br />
+										doświadczenia
+									</div>
+								</div>
+								<div class="experience__element">
+									<div class="experience__top">0+</div>
+									<div class="experience__bottom">
+										ukończonych <br />
+										projektów
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="about" class="about section">
+					<div class="container">
+						<div class="breakpoint">
+							<i class="fa-solid fa-user"></i>
+							O mnie
+						</div>
+                        <div class="h2">
+                            Twój sukces online z moim piórem kodu!
                         </div>
                         <div class="h5">
-                            Tworzę innowacyjne strony internetowe, które łączą piękno designu z&nbsp;doskonałą funkcjonalnością. Moja&nbsp;pasja leży w&nbsp;tworzeniu przestrzeni online, które inspirują i&nbsp;angażują.
+                            Kiedyś, jako początkujący web developer, siedziałem przed ekranem pełen entuzjazmu i nieograniczonej ciekawości. Moje pierwsze kroki były nieśmiałe, ale z determinacją i zaangażowaniem zaczęłem zgłębiać tajniki HTML, CSS i JavaScript. Wraz z upływem czasu, zrozumienie technologii rosło, a moje umiejętności rozkwitały. Przez wiele projektów i zrealizowanych zleceń zdobyłem cenne doświadczenie, opanowałem narzędzia i rozwinąłem umiejętności interakcji z klientami. To niesamowite, jak ciekawe wyzwania i rozmaite projekty mogą prowadzić do nieustannego rozwoju w świecie web developmentu, który nadal inspiruje mnie do tworzenia wciąż lepszych rozwiązań dla moich klientów.
                         </div>
-                        <div class="experience">
-                            <div class="experience__element">
-                                <div class="experience__top">3+</div>
-                                <div class="experience__bottom">lata <br> doświadczenia</div>
-                            </div>
-                            <div class="experience__element">
-                                <div class="experience__top">10+</div>
-                                <div class="experience__bottom">ukończonych <br> projektów</div>
-                            </div>
+					</div>
+				</div>
+				<div id="my-work" class="my-work">
+					<div class="container">
+						<div class="breakpoint">
+							<i class="fa-solid fa-user"></i>
+							O mnie
+						</div>
+						<div class="h2">
+                            Nauka i doświadczenie
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="scroll-menu"></div>
-    </div>
-</body>
+						
+					</div>
+				</div>
+			</div>
+			<div id="scroll-menu" class="scroll-menu">
+				<ul>
+					<li>
+						<a class="active" href="#scroll-page" data-name="hero">
+							<div class="menu-help">Wstęp</div>
+							<div class="arrow"></div>
+							<i data-name="hero" class="fa-solid fa-house"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#about" data-name="about">
+							<div class="menu-help">O mnie</div>
+							<div class="arrow"></div>
+							<i data-name="about" class="fa-solid fa-user"></i
+						></a>
+					</li>
+					<li>
+						<a href="#my-work">
+							<div class="menu-help">Moje prace</div>
+							<div class="arrow"></div>
+							<i data-name="work" class="fa-solid fa-briefcase"></i
+						></a>
+					</li>
+					<li>
+						<a href="">
+							<div class="menu-help">Hero</div>
+							<div class="arrow"></div>
+							<i data-name="" class="fa-solid fa-bars-staggered"></i
+						></a>
+					</li>
+					<li>
+						<a href="">
+							<div class="menu-help">Hero</div>
+							<div class="arrow"></div>
+							<i data-name="" class="fa-solid fa-bars-staggered"></i
+						></a>
+					</li>
+					<li>
+						<a href="">
+							<div class="menu-help">Hero</div>
+							<div class="arrow"></div>
+							<i data-name="" class="fa-solid fa-bars-staggered"></i
+						></a>
+					</li>
+					<li>
+						<a href="">
+							<div class="menu-help">Hero</div>
+							<div class="arrow"></div>
+							<i data-name="" class="fa-solid fa-bars-staggered"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
 </html>
