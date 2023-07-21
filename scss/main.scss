@@ -27,7 +27,6 @@ li{
 }
 
 #scroll-page{
-    height: 200vh;
     scroll-behavior: smooth;
 }
 
@@ -74,6 +73,7 @@ a{
     font-family: Dosis;
     margin-bottom: .8em;
 }
+
 .h2{
     font-size: 4.5rem;
     font-family: 'Dosis', sans-serif;
@@ -81,11 +81,12 @@ a{
     margin: 1em 0;
 }
 
-
 .h4 {
     font-size: 2.3rem;
+    line-height: 3.3rem;
     margin-bottom: .4em;
 }
+
 .h5{
     font-size: 2rem;
     font-family: 'Dosis', sans-serif;
@@ -270,6 +271,7 @@ a{
     border: 1px solid $white;
     border-radius: 30px;
     padding: .7em .4em;
+
     a{
         position: relative;
         display: flex;
@@ -277,6 +279,7 @@ a{
         width: 100%;
         padding: .5em;
     }
+
     .menu-help{
         position: absolute;
         width: auto;
@@ -295,6 +298,7 @@ a{
         pointer-events: none;
         transition: all .3s ease;
     }
+
     .menu-help::after{
         content: '';
         position: absolute;
@@ -317,6 +321,7 @@ a{
         transition: all .4s ease;
         opacity: 1;
     }
+
     a:hover i{
         color: $mainColorSecond;
         transform: scale(1.35);
@@ -325,6 +330,39 @@ a{
     .active i {
         color: $mainColorSecond;
         transform: scale(1.35);
+    }
+}
+
+.exp{
+
+    .text-normal{
+        color: #afabb3;
+    }
+
+    .h5{
+        line-height: 0.8em;
+    }
+
+    &__header{
+        padding: 0 0 0 6em;
+        position: relative;
+    }
+
+    &__header::before{
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color:$white;
+        border-radius: 50%;
+        left: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__text{
+        padding: 4em 0 4em 6em;
+        border-left: 1px solid $white;
     }
 }
 
@@ -339,6 +377,7 @@ a{
         font-size: 1.8rem;
     }
 }
+
 @media(max-width:1200px){
     .info-container{
         padding: 20px 20px 0;
@@ -373,6 +412,7 @@ a{
         &__image{
             display: none;
         }
+
         &__text-wrapper{
             background-image:url('/img/bg.jpg') ;
             background-size: cover;
@@ -421,7 +461,7 @@ a{
 }
 @media(max-width:500px){
     html {
-        font-size: 7.5px;
+        font-size: 8px;
     }
 }
 

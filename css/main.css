@@ -27,7 +27,6 @@ li {
 }
 
 #scroll-page {
-  height: 200vh;
   scroll-behavior: smooth;
 }
 
@@ -92,6 +91,7 @@ a {
 
 .h4 {
   font-size: 2.3rem;
+  line-height: 3.3rem;
   margin-bottom: 0.4em;
 }
 
@@ -370,6 +370,33 @@ a {
           transform: scale(1.35);
 }
 
+.exp .text-normal {
+  color: #afabb3;
+}
+.exp .h5 {
+  line-height: 0.8em;
+}
+.exp__header {
+  padding: 0 0 0 6em;
+  position: relative;
+}
+.exp__header::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #fcfcfc;
+  border-radius: 50%;
+  left: -8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.exp__text {
+  padding: 4em 0 4em 6em;
+  border-left: 1px solid #fcfcfc;
+}
+
 @media (max-width: 1300px) {
   .h1 {
     font-size: 6rem;
@@ -465,7 +492,7 @@ a {
 }
 @media (max-width: 500px) {
   html {
-    font-size: 7.5px;
+    font-size: 8px;
   }
 }
 @media (max-width: 400px) {
