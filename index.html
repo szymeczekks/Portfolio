@@ -9,6 +9,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&family=Lato:ital,wght@0,300;0,400;0,900&family=Montserrat:ital,wght@0,800;0,900;1,900&display=swap" rel="stylesheet" />
 		<script src="https://kit.fontawesome.com/20e2385bf9.js" crossorigin="anonymous"></script>
+		<script src="https://smtpjs.com/v3/smtp.js">
+		</script>
 		<script src="/js/app.js"></script>
 	</head>
 	<body>
@@ -62,7 +64,7 @@
 				</div>
 			</div>
 			<div id="scroll-page" class="scroll-page">
-				<div id="hero" class="hero section">
+				<div id="hero" class="section hero">
 					<div class="hero__image">
 						<picture>
 							<!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
@@ -84,24 +86,38 @@
 							</div>
 							<div class="experience">
 								<div class="experience__element">
-									<div class="experience__top">1+</div>
+									<div class="experience__top"><span data-count="1">0</span>+</div>
 									<div class="experience__bottom">
-										lata <br />
+									 	lat <br />
 										doświadczenia
 									</div>
 								</div>
 								<div class="experience__element">
-									<div class="experience__top">0+</div>
+									<div class="experience__top"><span data-count="2">0</span>+</div>
 									<div class="experience__bottom">
 										ukończonych <br />
 										projektów
+									</div>
+								</div>
+								<div class="experience__element">
+									<div class="experience__top"><span data-count="2">0</span>+</div>
+									<div class="experience__bottom">
+										zadowolonych <br />
+										klientów
+									</div>
+								</div>
+								<div class="experience__element">
+									<div class="experience__top"><span data-count="100">0</span>+</div>
+									<div class="experience__bottom">
+										wypitych <br />
+										kaw
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="about" class="about section">
+				<div id="about" class="section about">
 					<div class="container">
 						<div class="breakpoint">
 							<i class="fa-solid fa-user"></i>
@@ -115,7 +131,7 @@
                         </div>
 					</div>
 				</div>
-				<div id="experience-section" class="experience-section">
+				<div id="experience-section" class="section experience-section">
 					<div class="container">
 						<div class="breakpoint">
 							<i class="fa-solid fa-user"></i>
@@ -130,17 +146,19 @@
 									<div class="h5">2023 - Aktualnie</div>
 								</div>
 								<div class="exp__text">
-									<div class="h4">
-										Praca jako Web Designer & Developer
-									</div>
-									<div class="text-normal">
-										SunGroup
-									</div>
-									<div class="h4">
-										Student IT
-									</div>
-									<div class="text-normal">
-										Politechnika Koszalińska
+									<div class="exp__text-wrap">
+										<div class="h4">
+											Praca jako Web Designer & Developer
+										</div>
+										<div class="text-normal">
+											SunGroup
+										</div>
+										<div class="h4">
+											Student IT
+										</div>
+										<div class="text-normal">
+											Politechnika Koszalińska
+										</div>
 									</div>
 								</div>
 							</div>
@@ -149,14 +167,16 @@
 									<div class="h5">2022</div>
 								</div>
 								<div class="exp__text">
-									<div class="h4">
-										Staż jako Web Designer & Developer
-									</div>
-									<div class="text-normal">
-										SunGroup
-									</div>
-									<div class="h4">
-										Zbieranie doświadczenia i wiedzy poprzez kursy oraz tworzenie projektów
+									<div class="exp__text-wrap">
+										<div class="h4">
+											Staż jako Web Designer & Developer
+										</div>
+										<div class="text-normal">
+											SunGroup
+										</div>
+										<div class="h4">
+											Zbieranie doświadczenia i wiedzy poprzez kursy oraz tworzenie projektów
+										</div>
 									</div>
 								</div>
 							</div>
@@ -165,13 +185,242 @@
 									<div class="h5">2021</div>
 								</div>
 								<div class="exp__text">
-									<div class="h4">
-										Rozpoczęcie nauki tworzenia stron internetowych
+									<div class="exp__text-wrap">
+										<div class="h4">
+											Rozpoczęcie nauki tworzenia stron internetowych
+										</div>
 									</div>
 								</div>
 							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="section services" id="services">
+					<div class="container">
+						<div class="breakpoint">
+							<i class="fa-solid fa-bars-staggered"></i>
+							Usługi
 						</div>
-						
+						<div class="h2">
+                            Moje usługi
+                        </div>
+						<div class="services__wrapper">
+							<div class="services__element">
+								<div class="services__ico"></div>
+								<div class="services__text">
+									<div class="h4">Web & Mobile Design</div>
+									<div class="h5">Oferuję kompleksowe usługi Web & Mobile Design, kreując wizualnie atrakcyjne i intuicyjne interfejsy, które dostosowują się zarówno do ekranów komputerów, jak i urządzeń mobilnych.</div>
+								</div>
+							</div>
+							<div class="services__element">
+								<div class="services__ico"></div>
+								<div class="services__text">
+									<div class="h4">Graphic Design</div>
+									<div class="h5">Jako web developer oferuję także Graphic Design, tworząc oryginalne i przyciągające wzrok elementy graficzne, które wzmocnią wizerunek Twojej marki i nadadzą Twojej witrynie unikalny charakter.</div>
+								</div>
+							</div>
+							<div class="services__element">
+								<div class="services__ico"></div>
+								<div class="services__text">
+									<div class="h4">Backend</div>
+									<div class="h5">Zaprogramuję zaawansowane funkcje backendowe, które uczynią Twoją stronę nie tylko piękną, ale także wyjątkowo funkcjonalną i dynamiczną.</div>
+								</div>
+							</div>
+							<div class="services__element">
+								<div class="services__ico"></div>
+								<div class="services__text">
+									<div class="h4">SEO</div>
+									<div class="h5">Chcesz, aby Twoja witryna była na szczycie wyników wyszukiwania? Dzięki indywidualnemu podejściu i dbałości o jakość, zapewniam skuteczne i trwałe efekty, które pozwolą Twojej stronie wybić się ponad konkurencję.</div>
+								</div>
+							</div>
+						</div>
+						<div class="worth">
+							<div class="worth__img">
+								<img src="./img/qa.jpg" alt="">
+							</div>
+							<div class="info__name">
+								Dlaczego nie <span class="text-colored">CMS</span>?
+							</div>
+							<div class="Q">
+								<div class="question"><div class="h4">Nadmiarowy kod i wydajność<i class="fa-solid fa-chevron-down"></i></div></div>
+								<div class="answer"><div class="h5">CMS-y często zawierają nadmiarowy kod i funkcje, które mogą wprowadzać dodatkowe obciążenie i wpływać na wydajność strony. Pisanie prostych lub skomplikowanych stron od podstaw umożliwia utrzymanie czystego kodu i lepszą wydajność.</div></div>
+							</div>
+							<div class="Q">
+								<div class="question"><div class="h4">Bezpieczeństwo<i class="fa-solid fa-chevron-down"></i></div></div>
+								<div class="answer"><div class="h5">Gotowe CMS-y, jeśli nie są regularnie aktualizowane i zabezpieczane, mogą stanowić potencjalne zagrożenie dla bezpieczeństwa strony. Pisanie własnego kodu daje kontrolę nad bezpieczeństwem i ułatwia reagowanie na potencjalne luki w zabezpieczeniach.</div></div>
+							</div>
+							<div class="Q">
+								<div class="question"><div class="h4">Unikatowy wygląd i branding<i class="fa-solid fa-chevron-down"></i></div></div>
+								<div class="answer"><div class="h5">Jeśli strona wymaga unikalnego wyglądu i brandingu, dostępne szablony i motywy CMS-a mogą być ograniczające. Pisanie własnego kodu daje większą swobodę w tworzeniu indywidualnego i spersonalizowanego projektu.</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section skills" id="skills">
+					<div class="container">
+						<div class="breakpoint">
+							<i class="fa-solid fa-shapes"></i>
+							Umiejętności
+						</div>
+						<div class="h2">
+                            Moje atuty
+                        </div>
+						<div class="skill">
+							<div class="skill__el">
+								<div class="skill__name h4">
+									HTML
+								</div>
+								<div class="skill__bar">
+									<svg width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="85" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<svg class="skill__glow" width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="85" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<div class="h2"><span>0</span><span>%</span></div>
+								</div>
+							</div>
+							<div class="skill__el">
+								<div class="skill__name h4">
+									CSS/SCSS
+								</div>
+								<div class="skill__bar">
+									<svg width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="80" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<svg class="skill__glow" width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="80" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<div class="h2"><span>0</span><span>%</span></div>
+								</div>
+							</div>
+							<div class="skill__el">
+								<div class="skill__name h4">
+									JavaScript
+								</div>
+								<div class="skill__bar">
+									<svg width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="70" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<svg class="skill__glow" width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="70" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<div class="h2"><span>0</span><span>%</span></div>
+								</div>
+							</div>
+							<div class="skill__el">
+								<div class="skill__name h4">
+									Bootstrap
+								</div>
+								<div class="skill__bar">
+									<svg width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="60" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<svg class="skill__glow" width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="60" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<div class="h2"><span>0</span><span>%</span></div>
+								</div>
+							</div>
+							<div class="skill__el">
+								<div class="skill__name h4">
+									Git
+								</div>
+								<div class="skill__bar">
+									<svg width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="50" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<svg class="skill__glow" width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="50" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<div class="h2"><span>0</span><span>%</span></div>
+								</div>
+							</div>
+							<div class="skill__el">
+								<div class="skill__name h4">
+									PHP
+								</div>
+								<div class="skill__bar">
+									<svg width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="50" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<svg class="skill__glow" width="150" height="150" viewBox="0 0 150 150">
+										<circle data-percentage="50" cx="75" cy="75" r="70" class="skill__progress"></circle>
+									</svg>
+									<div class="h2"><span>0</span><span>%</span></div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="section" id="portfolio">
+					<div class="container">
+						<div class="breakpoint">
+							<i class="fa-solid fa-table-cells"></i>
+							Portfolio
+						</div>
+						<div class="h2">
+							Wykonane projekty
+						</div>
+						<div class="portfolio">
+							<div class="portfolio__el">
+								<div class="h4">We Are Creative</div>
+								<div class="text-normal">
+									Projekt strony stworzony dla firmy wytwarzającej kreatywne rzeczy.
+								</div>
+								<div class="portfolio__img">
+									<img src="img/page1.jpg" alt="">
+								</div>
+								<div class="portfolio__tags">
+									<div class="tag">Creative</div>
+									<div class="tag">Landing Page</div>
+								</div>
+							</div>
+							<div class="portfolio__el">
+								<div class="h4">Website Name</div>
+								<div class="text-normal">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptatem.
+								</div>
+								<div class="portfolio__img">
+									<img src="img/page1.jpg" alt="">
+								</div>
+								<div class="portfolio__tags">
+									<div class="tag">TagName</div>
+									<div class="tag">TagName</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="contact">
+					<div class="container">
+						<div class="breakpoint">
+							<i class="fa-regular fa-envelope"></i>
+							Kontakt
+						</div>
+						<div class="h2">
+							Pracujmy <span class="text-colored">razem</span>!
+						</div>
+						<div class="contact">
+							<!-- <form action="https://api.web3forms.com/submit" method="POST"> -->
+								<input type="hidden" name="access_key" value="b95bc733-1ef1-4926-b413-088dc8b497f6">
+								<div class="input__wrapper">
+									<input type="text" name="" id="name" placeholder="Imię" required>
+									<div class="border"></div>
+								</div>
+								<div class="input__wrapper">
+									<input type="email" name="" id="email" placeholder="Email" required>
+									<div class="border"></div>
+								</div>
+								<div class="input__wrapper">
+									<textarea name="" id="" cols="15" rows="5" placeholder="Wiadomość" required></textarea>
+									<div class="border"></div>
+								</div>
+								<!-- <div class="h-captcha" data-captcha="true"></div> -->
+								<button class="button" id="btn"><a href="">Wyślij wiadomość</a></button>
+							<!-- </form> -->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -192,42 +441,43 @@
 						></a>
 					</li>
 					<li>
-						<a href="#experience-section">
+						<a href="#experience-section" data-name="experience-section">
 							<div class="menu-help">Moje prace</div>
 							<div class="arrow"></div>
 							<i data-name="experience-section" class="fa-solid fa-briefcase"></i
 						></a>
 					</li>
 					<li>
-						<a href="">
-							<div class="menu-help">Hero</div>
+						<a href="#services" data-name="services">
+							<div class="menu-help">Usługi</div>
 							<div class="arrow"></div>
-							<i data-name="" class="fa-solid fa-bars-staggered"></i
-						></a>
+							<i data-name="services" class="fa-solid fa-bars-staggered"></i>
+						</a>
 					</li>
 					<li>
-						<a href="">
-							<div class="menu-help">Hero</div>
+						<a href="#skills" data-name="skills">
+							<div class="menu-help">Umiejętności</div>
 							<div class="arrow"></div>
-							<i data-name="" class="fa-solid fa-bars-staggered"></i
-						></a>
+							<i data-name="skills" class="fa-solid fa-shapes"></i>
+						</a>
 					</li>
 					<li>
-						<a href="">
-							<div class="menu-help">Hero</div>
+						<a href="#portfolio" data-name="portfolio">
+							<div class="menu-help">Portfolio</div>
 							<div class="arrow"></div>
-							<i data-name="" class="fa-solid fa-bars-staggered"></i
-						></a>
+							<i data-name="portfolio" class="fa-solid fa-table-cells"></i>
+						</a>
 					</li>
 					<li>
-						<a href="">
-							<div class="menu-help">Hero</div>
+						<a href="#contact" data-name="contact">
+							<div class="menu-help">Kontakt</div>
 							<div class="arrow"></div>
-							<i data-name="" class="fa-solid fa-bars-staggered"></i
-						></a>
+							<i data-name="contact" class="fa-regular fa-envelope"></i>	 
+						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
+		<script src="https://web3forms.com/client/script.js" async defer></script>
 	</body>
 </html>
